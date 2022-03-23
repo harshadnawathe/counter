@@ -4,7 +4,7 @@ metadata:
   name: counter-service
   description: A simple counter service
   tags:
-    - Kotlin
+    - kotlin
 spec:
   type: app
   lifecycle: experimental
