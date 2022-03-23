@@ -1,4 +1,4 @@
-package com.github.harshadnawathe.x.counting.counterkt
+package com.github.harshadnawathe.x.counterkt
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
