@@ -8,7 +8,7 @@ metadata:
   annotations:
     github.com/project-slug: 'harshadnawathe/counter'
 spec:
-  type: app
+  type: service
   lifecycle: experimental
   owner: user:guest
   system: app-services
