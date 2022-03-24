@@ -31,7 +31,7 @@ class Counter(name: String, count: Int) {
         }
 
         private fun check(count: Int) = requireNotNull(count.takeIf { it >= 0 }) {
-            "Counter count cannot be zero"
+            "Counter count cannot be negative"
         }
     }
 }
