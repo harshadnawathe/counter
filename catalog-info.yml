@@ -8,5 +8,5 @@ metadata:
 spec:
   type: app
   lifecycle: experimental
-  owner: harshad
+  owner: user:guest
   system: app-services
