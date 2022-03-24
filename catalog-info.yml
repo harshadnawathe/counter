@@ -5,6 +5,8 @@ metadata:
   description: A simple counter service
   tags:
     - kotlin
+  annotations:
+    github.com/project-slug: 'harshadnawathe/counter'
 spec:
   type: app
   lifecycle: experimental
