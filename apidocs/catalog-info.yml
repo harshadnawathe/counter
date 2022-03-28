@@ -10,7 +10,7 @@ spec:
   type: openapi
   lifecycle: production
   owner: user:guest
-  system: app-services
+  system: counter-app
   subcomponentOf: "counter-service"
   definition: |
     openapi: 3.0.1
