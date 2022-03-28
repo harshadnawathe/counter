@@ -3,6 +3,9 @@ kind: API
 metadata:
   name: counter-api
   description: Retrieve artist details
+  links:
+   - url: http://localhost:8080/swagger-ui.html
+     title: Swagger UI
 spec:
   type: openapi
   lifecycle: production
