@@ -12,4 +12,5 @@ spec:
   lifecycle: experimental
   owner: user:guest
   system: app-services
-  providesApis: api:counter-api
+  providesApis: 
+    - api:counter-api
