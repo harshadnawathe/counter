@@ -56,6 +56,7 @@ tasks.jacocoTestReport {
 tasks.jacocoTestReport {
     reports {
         xml.required.set(false)
-        csv.required.set(false)
+        csv.required.set(true)
+        csv.outputLocation.set(layout.buildDirectory.file("reports/jacoco/test/csv/testReport.csv"))
     }
 }

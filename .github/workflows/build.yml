@@ -31,5 +31,5 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: jacoco-reports-html
-          path: service/build/reports/jacoco/test/html
+          path: service/build/reports/jacoco/test/csv/testReport.csv
 
