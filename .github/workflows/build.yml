@@ -25,4 +25,11 @@ jobs:
         uses: gradle/gradle-build-action@v2
         
       - name: Execute Gradle build
-        run: ./gradlew clean build --no-daemon 
+        run: ./gradlew clean build --no-daemon
+
+      - name: Archive Jacoco reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: jacoco-reports-html
+          path: service/build/reports/jacoco/test/html
+
