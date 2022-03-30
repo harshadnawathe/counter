@@ -30,6 +30,6 @@ jobs:
       - name: Archive Jacoco reports
         uses: actions/upload-artifact@v3
         with:
-          name: jacoco-reports-html
+          name: jacoco-reports-csv
           path: service/build/reports/jacoco/test/csv/testReport.csv
 
