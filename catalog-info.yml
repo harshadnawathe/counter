@@ -4,5 +4,5 @@ metadata:
   name: counter-app
   description: Counter Application for managing counters
 spec:
-  owner: user:guest
+  owner: group:team-a
   domain: counting
