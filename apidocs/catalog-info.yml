@@ -9,7 +9,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: user:guest
+  owner: group:team-a
   system: counter-app
   subcomponentOf: "counter-service"
   definition: |
