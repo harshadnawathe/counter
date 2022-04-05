@@ -6,3 +6,11 @@ metadata:
 spec:
   owner: group:team-a
   domain: counting
+---
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: counting
+  description: Everything about counting
+spec:
+  owner: group:team-a
