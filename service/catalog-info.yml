@@ -7,6 +7,7 @@ metadata:
     - kotlin
   annotations:
     github.com/project-slug: 'harshadnawathe/counter'
+    jacoco/reports/csv: 'jacoco-reports-csv'
   links:
     - url: https://github.com/harshadnawathe/counter/blob/master/README.md
       title: Counter Service
