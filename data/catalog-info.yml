@@ -10,7 +10,7 @@ metadata:
     - url: https://github.com/harshadnawathe/counter/blob/master/README.md
       title: Counter Data
 spec:
-  type: service
+  type: data
   lifecycle: experimental
   owner: group:team-a
   system: counter-app
