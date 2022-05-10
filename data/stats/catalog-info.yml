@@ -1,36 +1,39 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: counter-data
-  description: A simple data product describing counter data
+  name: counting-stats
+  description: A simple data product producing counting statistics
   tags:
     - kotlin
   annotations:
   links:
     - url: https://github.com/harshadnawathe/counter/blob/master/README.md
-      title: Counter Data
+      title: Counting Statistics
 spec:
   type: data
   lifecycle: experimental
-  owner: group:team-a
+  owner: group:team-b
   system: counter-app
+  consumesResources:
+    - resource:counter-usage-data
+  producesResources:
+    - resource:counting-stats-data
+  dependsOn:
+    - component:counter-usage
 ---
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Resource
 metadata:
-  name: billing-data
-  description: A simple data product describing billing data
+  name: countinh-stats-data
+  description: Counting statistics database
   tags:
     - kotlin
   annotations:
   links:
     - url: https://github.com/harshadnawathe/counter/blob/master/README.md
-      title: Billing Data
+      title: Counter Statistics Database
 spec:
-  type: data
+  type: database
   lifecycle: experimental
-  owner: group:team-a
+  owner: group:team-b
   system: counter-app
-  dependsOn:
-    - component:counter-data
-
