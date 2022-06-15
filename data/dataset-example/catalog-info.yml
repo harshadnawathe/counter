@@ -1,0 +1,62 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: hockey-data
+  description: The data represents all the official metrics measured for each game in the NHL in the past 6 years.
+  tags:
+    - dataset
+  annotations:
+  links:
+    - url: https://www.kaggle.com/datasets/martinellis/nhl-game-data
+      title: NHL Game Data
+spec:
+  type: my.dataset
+  lifecycle: experimental
+  owner: group:team-a
+  system: podcast
+  dependsOn:
+    - resource:nhl-game
+    - resource:nhl-game-goals
+    - resource:nhl-game-plays
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: nhl-game
+  description: NHL Game Data
+  tags:
+    - table
+spec:
+  type: my.table
+  format: csv
+  lifecycle: experimental
+  owner: group:team-a
+  system: podcast
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: nhl-game-goals
+  description: NHL Game Goals Data
+  tags:
+    - table
+spec:
+  type: my.table
+  format: csv
+  lifecycle: experimental
+  owner: group:team-a
+  system: podcast
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: nhl-game-plays
+  description: NHL Game Plays Data
+  tags:
+    - table
+spec:
+  type: my.table
+  format: csv
+  lifecycle: experimental
+  owner: group:team-a
+  system: podcast
