@@ -14,19 +14,16 @@ spec:
   lifecycle: experimental
   owner: group:team-a
   system: podcast
-  dependsOn:
-    - resource:nhl-game
-    - resource:nhl-game-goals
-    - resource:nhl-game-plays
 ---
 apiVersion: backstage.io/v1alpha1
-kind: Resource
+kind: Component
 metadata:
   name: nhl-game
   description: NHL Game Data
   tags:
     - table
 spec:
+  subcomponentOf: hockey-data
   type: my.table
   format: csv
   lifecycle: experimental
@@ -34,13 +31,14 @@ spec:
   system: podcast
 ---
 apiVersion: backstage.io/v1alpha1
-kind: Resource
+kind: Component
 metadata:
   name: nhl-game-goals
   description: NHL Game Goals Data
   tags:
     - table
 spec:
+  subcomponentOf: hockey-data
   type: my.table
   format: csv
   lifecycle: experimental
@@ -48,13 +46,14 @@ spec:
   system: podcast
 ---
 apiVersion: backstage.io/v1alpha1
-kind: Resource
+kind: Component
 metadata:
   name: nhl-game-plays
   description: NHL Game Plays Data
   tags:
     - table
 spec:
+  subcomponentOf: hockey-data
   type: my.table
   format: csv
   lifecycle: experimental
