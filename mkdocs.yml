@@ -2,6 +2,7 @@ site_name: 'counter-kt-docs'
 
 nav:
   - Home: index.md
+  - Choreography: Choreography.md
 
 plugins:
   - techdocs-core
