@@ -30,7 +30,7 @@ dependencies {
     implementation("org.springdoc:springdoc-openapi-kotlin:1.6.6")
     implementation("org.springdoc:springdoc-openapi-data-rest:1.6.6")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testImplementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo")
+    testImplementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo:3.4.6")
     testImplementation("io.kotest:kotest-assertions-core:5.2.1")
 
 }
