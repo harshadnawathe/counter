@@ -15,7 +15,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: group:team-a
+  owner: group:guests
   system: counter-app
   providesApis: 
     - api:counter-api

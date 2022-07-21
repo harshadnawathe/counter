@@ -4,4 +4,4 @@ metadata:
   name: counting
   description: Everything about counting
 spec:
-  owner: group:team-a
+  owner: group:guests
